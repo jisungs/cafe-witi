@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %} Cofe and wifi {% endblock %}
+
+{% block content %}
+    <div class="jumbotron text-center">
+        <div class ="container">
+                <!-- <img src="{{url_for ('static', filename ='img/New-york.jpg')}}" class="img-fluid" alt=""> -->
+                <img src="{{url_for ('static', filename ='img/caffee-wifi.gif')}}" class="img-thumbnail" width="300px" alt="">
+                <h1 class = "display-4">Coffee and Wifi</h1>
+                <p class="lead"> 내 주변에 있는 커피집과 작업하는데 필수 적인 와이파이와 전원의 현황을 표시 합니다.</p>
+            <a class="btn btn-warning btn-lg" href="{{url_for('cafes')}}" role="button"> Show me!!</a>
+        </div>
+
+    </div>
+
+
+
+{% endblock %}
